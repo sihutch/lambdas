@@ -1,4 +1,4 @@
-package PredicateTest;
+package com.ixxus.training.lamdas.test;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
