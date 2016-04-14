@@ -1,4 +1,4 @@
-package com.ixxus.training.lamdas.test;
+package com.ixxus.training.lambdas.test;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;

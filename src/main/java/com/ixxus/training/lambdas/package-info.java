@@ -5,4 +5,4 @@
  * @author si
  *
  */
-package com.ixxus.training.lamdas;
+package com.ixxus.training.lambdas;

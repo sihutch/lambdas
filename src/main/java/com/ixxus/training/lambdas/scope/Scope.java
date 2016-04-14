@@ -1,4 +1,4 @@
-package com.ixxus.training.lamdas.scope;
+package com.ixxus.training.lambdas.scope;
 
 public class Scope {
 

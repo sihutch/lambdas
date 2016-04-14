@@ -1,4 +1,4 @@
-package com.ixxus.training.lamdas.functioninterfaces;
+package com.ixxus.training.lambdas.functioninterfaces;
 
 import java.util.Optional;
 import java.util.UUID;

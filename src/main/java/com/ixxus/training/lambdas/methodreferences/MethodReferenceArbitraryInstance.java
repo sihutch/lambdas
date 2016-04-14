@@ -1,4 +1,4 @@
-package com.ixxus.training.lamdas.methodreferences;
+package com.ixxus.training.lambdas.methodreferences;
 
 import java.math.BigInteger;
 import java.util.Arrays;
