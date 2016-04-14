@@ -1,4 +1,4 @@
-package com.ixxus.training.lambdas.functioninterfaces;
+package com.ixxus.training.lambdas.functionalinterfaces;
 
 import java.util.Arrays;
 import java.util.List;
