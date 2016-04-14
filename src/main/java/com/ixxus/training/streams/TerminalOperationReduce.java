@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.BinaryOperator;
+import java.util.function.Function;
 
 public class TerminalOperationReduce {
 
@@ -13,20 +14,21 @@ public class TerminalOperationReduce {
 
 	public static void main(String[] args) {
 		maxReduceWithIdentityAndAccumulator(ints);
-		reduceWithIdentityAndAccumulatorEquivalent(ints,0, Integer::max);
-		
+		reduceWithIdentityAndAccumulatorEquivalent(ints, 0, Integer::max);
+
 		maxReduceWithAccumulator(emptyList);
-		reduceWithAccumulatorEquivalent(ints,Integer::max);
-		
+		reduceWithAccumulatorEquivalent(ints, Integer::max);
+
 		averageStringLength();
 	}
 
 	private static void maxReduceWithIdentityAndAccumulator(List<Integer> ls) {
 		System.out.println("maxReduceWithIdentityAndAccumulator: " +
-				ls.stream().reduce(0, Integer::max));
+				ls.stream()
+						.reduce(0, Integer::max));
 	}
 
-	private static void reduceWithIdentityAndAccumulatorEquivalent(List<Integer> ls,Integer identity, BinaryOperator<Integer> accumulator) {
+	private static void reduceWithIdentityAndAccumulatorEquivalent(List<Integer> ls, Integer identity, BinaryOperator<Integer> accumulator) {
 		Integer result = identity;
 		for (Integer i : ls) {
 			result = accumulator.apply(result, i);
@@ -40,7 +42,7 @@ public class TerminalOperationReduce {
 				ls.stream().reduce(Integer::max));
 	}
 
-	private static void reduceWithAccumulatorEquivalent(List<Integer> ls,BinaryOperator<Integer> accumulator) {
+	private static void reduceWithAccumulatorEquivalent(List<Integer> ls, BinaryOperator<Integer> accumulator) {
 		boolean foundAny = false;
 		Integer result = null;
 		for (Integer i : ls) {
@@ -53,13 +55,12 @@ public class TerminalOperationReduce {
 		Optional<Integer> optResult = foundAny ? Optional.of(result) : Optional.empty();
 		System.out.println("reduceWithAccumulatorEquivalent: " + optResult);
 	}
-	
-	
+
 	private static void averageStringLength() {
 		List<String> ls = Arrays.asList("one", "two", "three", "four", "five");
 		System.out.println("averageStringLength: " +
 				ls.stream()
-				  .mapToInt(String::length)
-				  .average());
+						.mapToInt(String::length)
+						.average());
 	}
 }
