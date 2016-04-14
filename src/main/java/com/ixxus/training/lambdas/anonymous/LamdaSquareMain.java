@@ -1,4 +1,4 @@
-package com.ixxus.training.lamdas.anonymous;
+package com.ixxus.training.lambdas.anonymous;
 
 import java.util.function.Function;
 

@@ -1,4 +1,4 @@
-package com.ixxus.training.lamdas.syntax;
+package com.ixxus.training.lambdas.syntax;
 
 import java.util.function.BiFunction;
 
