@@ -1,4 +1,4 @@
-package com.ixxus.training.streams.test;
+package com.ixxus.training.streams.ex.test;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.ixxus.training.streams.InfiniteStreams;
+import com.ixxus.training.streams.ex.InfiniteStreams;
 
 public class InfiniteStreamsTest {
 	
